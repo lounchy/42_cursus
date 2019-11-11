@@ -1,59 +1,67 @@
 = Host-specific information ====================================================
 $> hostname; uname -msr
-Dainis-2.local
-Darwin 18.7.0 x86_64
+c1r8s5.42madrid.com
+Darwin 18.6.0 x86_64
 $> date
-lunes, 11 de noviembre de 2019, 16:39:39 CET
+Mon Nov 11 20:59:19 CET 2019
 $> gcc --version
 Apple LLVM version 10.0.1 (clang-1001.0.46.4)
-Target: x86_64-apple-darwin18.7.0
+Target: x86_64-apple-darwin18.6.0
 Thread model: posix
-InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 $> clang --version
 Apple LLVM version 10.0.1 (clang-1001.0.46.4)
-Target: x86_64-apple-darwin18.7.0
+Target: x86_64-apple-darwin18.6.0
 Thread model: posix
-InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= libft.h=======================================================================
+$> norminette libft.h | grep -E '(Error|Warning)'
+Error: global scope bad aligned
+Error (line 35): spaces at the end of line
+Error (line 38): spaces at the end of line
+Norme check failed
 
 = Compiling libft ==============================================================
 $> make re
-Makefile:24: target `ft_memcmp.o' given more than once in the same rule.
-Makefile:24: target `ft_toupper.o' given more than once in the same rule.
-Makefile:24: target `ft_strlen.o' given more than once in the same rule.
-Makefile:24: target `ft_strlcat.o' given more than once in the same rule.
-Makefile:24: target `ft_isascii.o' given more than once in the same rule.
-Makefile:24: target `ft_memchr.o' given more than once in the same rule.
-Makefile:24: target `ft_strnstr.o' given more than once in the same rule.
-Makefile:24: target `ft_bzero.o' given more than once in the same rule.
-Makefile:24: target `ft_tolower.o' given more than once in the same rule.
-Makefile:24: target `ft_strncpy.o' given more than once in the same rule.
-Makefile:24: target `ft_isprint.o' given more than once in the same rule.
-Makefile:24: target `ft_isalnum.o' given more than once in the same rule.
 Makefile:24: target `ft_atoi.o' given more than once in the same rule.
+Makefile:24: target `ft_bzero.o' given more than once in the same rule.
+Makefile:24: target `ft_calloc.o' given more than once in the same rule.
+Makefile:24: target `ft_isalnum.o' given more than once in the same rule.
+Makefile:24: target `ft_isalpha.o' given more than once in the same rule.
+Makefile:24: target `ft_isascii.o' given more than once in the same rule.
+Makefile:24: target `ft_isdigit.o' given more than once in the same rule.
+Makefile:24: target `ft_isprint.o' given more than once in the same rule.
+Makefile:24: target `ft_memccpy.o' given more than once in the same rule.
+Makefile:24: target `ft_memchr.o' given more than once in the same rule.
+Makefile:24: target `ft_memcmp.o' given more than once in the same rule.
 Makefile:24: target `ft_memcpy.o' given more than once in the same rule.
-Makefile:24: target `ft_strchr.o' given more than once in the same rule.
-Makefile:24: target `ft_strlcpy.o' given more than once in the same rule.
 Makefile:24: target `ft_memmove.o' given more than once in the same rule.
 Makefile:24: target `ft_memset.o' given more than once in the same rule.
+Makefile:24: target `ft_strchr.o' given more than once in the same rule.
 Makefile:24: target `ft_strdup.o' given more than once in the same rule.
+Makefile:24: target `ft_strlcat.o' given more than once in the same rule.
+Makefile:24: target `ft_strlcpy.o' given more than once in the same rule.
+Makefile:24: target `ft_strlen.o' given more than once in the same rule.
 Makefile:24: target `ft_strncmp.o' given more than once in the same rule.
+Makefile:24: target `ft_strncpy.o' given more than once in the same rule.
+Makefile:24: target `ft_strnstr.o' given more than once in the same rule.
 Makefile:24: target `ft_strrchr.o' given more than once in the same rule.
-Makefile:24: target `ft_memccpy.o' given more than once in the same rule.
-Makefile:24: target `ft_isalpha.o' given more than once in the same rule.
-Makefile:24: target `ft_calloc.o' given more than once in the same rule.
-Makefile:24: target `ft_isdigit.o' given more than once in the same rule.
-rm -rf  ft_strnstr.o  ft_isdigit.o  ft_strlcpy.o  ft_strlen.o  ft_memcmp.o  ft_strchr.o  ft_bzero.o  ft_isascii.o  ft_memcpy.o  ft_memccpy.o  ft_isprint.o  ft_toupper.o  ft_strrchr.o  ft_isalpha.o  ft_memchr.o  ft_memset.o  ft_strncmp.o  ft_memmove.o  ft_strlcat.o  ft_calloc.o  ft_strdup.o  ft_atoi.o  ft_isalnum.o  ft_strncpy.o  ft_tolower.o  ft_memcmp.o  ft_toupper.o  ft_strlen.o  ft_strlcat.o  ft_isascii.o  ft_memchr.o  ft_strnstr.o  ft_bzero.o  ft_tolower.o  ft_strncpy.o  ft_isprint.o  ft_isalnum.o  ft_atoi.o  ft_memcpy.o  ft_strchr.o  ft_strlcpy.o  ft_memmove.o  ft_memset.o  ft_strdup.o  ft_strncmp.o  ft_strrchr.o  ft_memccpy.o  ft_isalpha.o  ft_calloc.o  ft_isdigit.o
+Makefile:24: target `ft_tolower.o' given more than once in the same rule.
+Makefile:24: target `ft_toupper.o' given more than once in the same rule.
+rm -rf  ft_atoi.o  ft_bzero.o  ft_calloc.o  ft_isalnum.o  ft_isalpha.o  ft_isascii.o  ft_isdigit.o  ft_isprint.o  ft_memccpy.o  ft_memchr.o  ft_memcmp.o  ft_memcpy.o  ft_memmove.o  ft_memset.o  ft_strchr.o  ft_strdup.o  ft_strlcat.o  ft_strlcpy.o  ft_strlen.o  ft_strncmp.o  ft_strncpy.o  ft_strnstr.o  ft_strrchr.o  ft_tolower.o  ft_toupper.o  ft_atoi.o  ft_bzero.o  ft_calloc.o  ft_isalnum.o  ft_isalpha.o  ft_isascii.o  ft_isdigit.o  ft_isprint.o  ft_memccpy.o  ft_memchr.o  ft_memcmp.o  ft_memcpy.o  ft_memmove.o  ft_memset.o  ft_strchr.o  ft_strdup.o  ft_strlcat.o  ft_strlcpy.o  ft_strlen.o  ft_strncmp.o  ft_strncpy.o  ft_strnstr.o  ft_strrchr.o  ft_tolower.o  ft_toupper.o
 rm -rf libft.a
-gcc -Wall -Werror -Wextra -I includes -c ./ft_strnstr.c ./ft_isdigit.c ./ft_strlcpy.c ./ft_strlen.c ./ft_memcmp.c ./ft_strchr.c ./ft_bzero.c ./ft_isascii.c ./ft_memcpy.c ./ft_memccpy.c ./ft_isprint.c ./ft_toupper.c ./ft_strrchr.c ./ft_isalpha.c ./ft_memchr.c ./ft_memset.c ./ft_strncmp.c ./ft_memmove.c ./ft_strlcat.c ./ft_calloc.c ./ft_strdup.c ./ft_atoi.c ./ft_isalnum.c ./ft_strncpy.c ./ft_tolower.c ./src/ft_memcmp/ft_memcmp.c ./src/ft_toupper/ft_toupper.c ./src/ft_strlen/ft_strlen.c ./src/ft_strlcat/ft_strlcat.c ./src/ft_isascii/ft_isascii.c ./src/ft_memchr/ft_memchr.c ./src/ft_strnstr/ft_strnstr.c ./src/ft_bzero/ft_bzero.c ./src/ft_tolower/ft_tolower.c ./src/ft_strncpy/ft_strncpy.c ./src/ft_isprint/ft_isprint.c ./src/ft_isalnum/ft_isalnum.c ./src/ft_atoi/ft_atoi.c ./src/ft_memcpy/ft_memcpy.c ./src/ft_strchr/ft_strchr.c ./src/ft_strlcpy/ft_strlcpy.c ./src/ft_memmove/ft_memmove.c ./src/ft_memset/ft_memset.c ./src/ft_strdup/ft_strdup.c ./src/ft_strncmp/ft_strncmp.c ./src/ft_strrchr/ft_strrchr.c ./src/ft_memccpy/ft_memccpy.c ./src/ft_isalpha/ft_isalpha.c ./src/ft_calloc/ft_calloc.c ./src/ft_isdigit/ft_isdigit.c
-ar rc libft.a  ft_strnstr.o  ft_isdigit.o  ft_strlcpy.o  ft_strlen.o  ft_memcmp.o  ft_strchr.o  ft_bzero.o  ft_isascii.o  ft_memcpy.o  ft_memccpy.o  ft_isprint.o  ft_toupper.o  ft_strrchr.o  ft_isalpha.o  ft_memchr.o  ft_memset.o  ft_strncmp.o  ft_memmove.o  ft_strlcat.o  ft_calloc.o  ft_strdup.o  ft_atoi.o  ft_isalnum.o  ft_strncpy.o  ft_tolower.o  ft_memcmp.o  ft_toupper.o  ft_strlen.o  ft_strlcat.o  ft_isascii.o  ft_memchr.o  ft_strnstr.o  ft_bzero.o  ft_tolower.o  ft_strncpy.o  ft_isprint.o  ft_isalnum.o  ft_atoi.o  ft_memcpy.o  ft_strchr.o  ft_strlcpy.o  ft_memmove.o  ft_memset.o  ft_strdup.o  ft_strncmp.o  ft_strrchr.o  ft_memccpy.o  ft_isalpha.o  ft_calloc.o  ft_isdigit.o
+gcc -Wall -Werror -Wextra -I includes -c ./ft_atoi.c ./ft_bzero.c ./ft_calloc.c ./ft_isalnum.c ./ft_isalpha.c ./ft_isascii.c ./ft_isdigit.c ./ft_isprint.c ./ft_memccpy.c ./ft_memchr.c ./ft_memcmp.c ./ft_memcpy.c ./ft_memmove.c ./ft_memset.c ./ft_strchr.c ./ft_strdup.c ./ft_strlcat.c ./ft_strlcpy.c ./ft_strlen.c ./ft_strncmp.c ./ft_strncpy.c ./ft_strnstr.c ./ft_strrchr.c ./ft_tolower.c ./ft_toupper.c ./src/Part1/ft_atoi/ft_atoi.c ./src/Part1/ft_bzero/ft_bzero.c ./src/Part1/ft_calloc/ft_calloc.c ./src/Part1/ft_isalnum/ft_isalnum.c ./src/Part1/ft_isalpha/ft_isalpha.c ./src/Part1/ft_isascii/ft_isascii.c ./src/Part1/ft_isdigit/ft_isdigit.c ./src/Part1/ft_isprint/ft_isprint.c ./src/Part1/ft_memccpy/ft_memccpy.c ./src/Part1/ft_memchr/ft_memchr.c ./src/Part1/ft_memcmp/ft_memcmp.c ./src/Part1/ft_memcpy/ft_memcpy.c ./src/Part1/ft_memmove/ft_memmove.c ./src/Part1/ft_memset/ft_memset.c ./src/Part1/ft_strchr/ft_strchr.c ./src/Part1/ft_strdup/ft_strdup.c ./src/Part1/ft_strlcat/ft_strlcat.c ./src/Part1/ft_strlcpy/ft_strlcpy.c ./src/Part1/ft_strlen/ft_strlen.c ./src/Part1/ft_strncmp/ft_strncmp.c ./src/Part1/ft_strncpy/ft_strncpy.c ./src/Part1/ft_strnstr/ft_strnstr.c ./src/Part1/ft_strrchr/ft_strrchr.c ./src/Part1/ft_tolower/ft_tolower.c ./src/Part1/ft_toupper/ft_toupper.c
+ar rc libft.a  ft_atoi.o  ft_bzero.o  ft_calloc.o  ft_isalnum.o  ft_isalpha.o  ft_isascii.o  ft_isdigit.o  ft_isprint.o  ft_memccpy.o  ft_memchr.o  ft_memcmp.o  ft_memcpy.o  ft_memmove.o  ft_memset.o  ft_strchr.o  ft_strdup.o  ft_strlcat.o  ft_strlcpy.o  ft_strlen.o  ft_strncmp.o  ft_strncpy.o  ft_strnstr.o  ft_strrchr.o  ft_tolower.o  ft_toupper.o  ft_atoi.o  ft_bzero.o  ft_calloc.o  ft_isalnum.o  ft_isalpha.o  ft_isascii.o  ft_isdigit.o  ft_isprint.o  ft_memccpy.o  ft_memchr.o  ft_memcmp.o  ft_memcpy.o  ft_memmove.o  ft_memset.o  ft_strchr.o  ft_strdup.o  ft_strlcat.o  ft_strlcpy.o  ft_strlen.o  ft_strncmp.o  ft_strncpy.o  ft_strnstr.o  ft_strrchr.o  ft_tolower.o  ft_toupper.o
 ranlib libft.a
 
 $> ls -la libft.a
--rw-r--r--  1 dainis  staff  44440 11 nov 16:39 /Users/dainis/Documents/42_cursus/Libftest/dirlibft/libft.a
+-rw-r--r--  1 dbelinsk  2019  44472 Nov 11 20:59 /Users/dbelinsk/Documents/cursus/libft_cpy/Libftest/dirlibft/libft.a
 
 = Part1_functions ==============================================================
 
 = ft_memset.c ==================================================================
+$> norminette ft_memset.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_memset.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -78,6 +86,7 @@ $> diff -U 3 user_output_test04 test04.output
 Diff OK :D
 
 = ft_bzero.c ===================================================================
+$> norminette ft_bzero.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_bzero.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -92,6 +101,7 @@ $> diff -U 3 user_output_test02 test02.output
 Diff OK :D
 
 = ft_memcpy.c ==================================================================
+$> norminette ft_memcpy.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_memcpy.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -111,6 +121,7 @@ $> diff -U 3 user_output_test03 test03.output
 Diff OK :D
 
 = ft_memccpy.c =================================================================
+$> norminette ft_memccpy.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_memccpy.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -135,6 +146,7 @@ $> diff -U 3 user_output_test04 test04.output
 Diff OK :D
 
 = ft_memmove.c =================================================================
+$> norminette ft_memmove.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_memmove.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -164,6 +176,7 @@ $> diff -U 3 user_output_test05 test05.output
 Diff OK :D
 
 = ft_memchr.c ==================================================================
+$> norminette ft_memchr.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_memchr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -198,6 +211,7 @@ $> diff -U 3 user_output_test06 test06.output
 Diff OK :D
 
 = ft_memcmp.c ==================================================================
+$> norminette ft_memcmp.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_memcmp.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -247,6 +261,7 @@ $> diff -U 3 user_output_test09 test09.output
 Diff OK :D
 
 = ft_strlen.c ==================================================================
+$> norminette ft_strlen.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strlen.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -281,6 +296,7 @@ $> diff -U 3 user_output_test06 test06.output
 Diff OK :D
 
 = ft_strdup.c ==================================================================
+$> norminette ft_strdup.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strdup.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -293,6 +309,7 @@ Diff OK :D
 Nothing turned in
 
 = ft_strncpy.c =================================================================
+$> norminette ft_strncpy.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strncpy.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -333,6 +350,7 @@ Nothing turned in
 Nothing turned in
 
 = ft_strlcat.c =================================================================
+$> norminette ft_strlcat.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strlcat.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -382,6 +400,7 @@ $> diff -U 3 user_output_test09 test09.output
 Diff OK :D
 
 = ft_strchr.c ==================================================================
+$> norminette ft_strchr.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strchr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -416,6 +435,7 @@ $> diff -U 3 user_output_test06 test06.output
 Diff OK :D
 
 = ft_strrchr.c =================================================================
+$> norminette ft_strrchr.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strrchr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -463,20 +483,14 @@ Diff OK :D
 Nothing turned in
 
 = ft_strnstr.c =================================================================
+$> norminette ft_strnstr.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strnstr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
 $> ./user_exe 01
 $> diff -U 3 user_output_test01 test01.output
---- /Users/dainis/Documents/42_cursus/Libftest/tests/Part1_functions/ft_strnstr/user_output_test01	2019-11-11 16:39:44.000000000 +0100$
-+++ /Users/dainis/Documents/42_cursus/Libftest/tests/Part1_functions/ft_strnstr/test01.output	2019-11-11 16:38:30.000000000 +0100$
-@@ -1 +1 @@$
--NULL$
-\ No newline at end of file$
-+lorem ipsum dolor sit amet$
-\ No newline at end of file$
 
-Diff KO :(
+Diff OK :D
 = Test 2 ===================================================
 $> ./user_exe 02
 $> diff -U 3 user_output_test02 test02.output
@@ -495,15 +509,8 @@ Diff OK :D
 = Test 5 ===================================================
 $> ./user_exe 05
 $> diff -U 3 user_output_test05 test05.output
---- /Users/dainis/Documents/42_cursus/Libftest/tests/Part1_functions/ft_strnstr/user_output_test05	2019-11-11 16:39:44.000000000 +0100$
-+++ /Users/dainis/Documents/42_cursus/Libftest/tests/Part1_functions/ft_strnstr/test05.output	2019-11-11 16:38:30.000000000 +0100$
-@@ -1 +1 @@$
-- amet$
-\ No newline at end of file$
-+NULL$
-\ No newline at end of file$
 
-Diff KO :(
+Diff OK :D
 = Test 6 ===================================================
 $> ./user_exe 06
 $> diff -U 3 user_output_test06 test06.output
@@ -534,6 +541,7 @@ Diff OK :D
 Nothing turned in
 
 = ft_strncmp.c =================================================================
+$> norminette ft_strncmp.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strncmp.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -593,6 +601,7 @@ $> diff -U 3 user_output_test11 test11.output
 Diff OK :D
 
 = ft_atoi.c ====================================================================
+$> norminette ft_atoi.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_atoi.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -692,6 +701,7 @@ $> diff -U 3 user_output_test19 test19.output
 Diff OK :D
 
 = ft_isalpha.c =================================================================
+$> norminette ft_isalpha.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_isalpha.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -731,6 +741,7 @@ $> diff -U 3 user_output_test07 test07.output
 Diff OK :D
 
 = ft_isdigit.c =================================================================
+$> norminette ft_isdigit.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_isdigit.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -770,6 +781,7 @@ $> diff -U 3 user_output_test07 test07.output
 Diff OK :D
 
 = ft_isalnum.c =================================================================
+$> norminette ft_isalnum.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_isalnum.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -809,6 +821,7 @@ $> diff -U 3 user_output_test07 test07.output
 Diff OK :D
 
 = ft_isascii.c =================================================================
+$> norminette ft_isascii.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_isascii.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -853,6 +866,7 @@ $> diff -U 3 user_output_test08 test08.output
 Diff OK :D
 
 = ft_isprint.c =================================================================
+$> norminette ft_isprint.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_isprint.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -892,6 +906,7 @@ $> diff -U 3 user_output_test07 test07.output
 Diff OK :D
 
 = ft_toupper.c =================================================================
+$> norminette ft_toupper.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_toupper.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -931,6 +946,7 @@ $> diff -U 3 user_output_test07 test07.output
 Diff OK :D
 
 = ft_tolower.c =================================================================
+$> norminette ft_tolower.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_tolower.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1066,6 +1082,7 @@ Nothing turned in
 = Additional_functions =========================================================
 
 = ft_strlcpy.c =================================================================
+$> norminette ft_strlcpy.c | grep -E '(Error|Warning)'
 $> clang -Wextra -Wall -Werror ft_strlcpy.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================

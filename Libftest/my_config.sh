@@ -5,7 +5,7 @@
 ###################################
 
 #Edit the next line with the path of your libft project.
-PATH_LIBFT=~/Documents/42_cursus/libft
+PATH_LIBFT=~/Documents/cursus/libft_cpy/libft
 
 #If you use a relative path, don't put double quotes.
 #For example :
