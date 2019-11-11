@@ -24,9 +24,10 @@ all: $(NAME)
 $(OBJS):
 	gcc $(OPTIONS) $(FLAGS) -c $(SOURCES)
 
-$(NAME): $(OBJS)
-	gcc $(OPTIONS) $(FLAGS) $(OBJS) -o $(NAME)
-
+$(NAME):
+	gcc $(FLAGS) $(OPTIONS) -c $(SOURCES)
+	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 clean :
 	rm -rf $(OBJS)
 
